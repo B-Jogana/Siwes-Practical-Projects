@@ -1,0 +1,46 @@
+b  #span{
+    color: brown;
+}
+body{
+    padding: o;
+    margin: o;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(to right, skyblue,yellowgreen);
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
+input,button{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+
+}
+button{
+    background-color: rgb(249, 250, 170);
+    border-radius: 10px;
+    border: none;
+    color: rgb(173, 145, 145);
+}
+
+button:hover{
+    background-color:rgb(0, 204, 255);
+    opacity: 23px;
+    transform: scale(1.05);
+    color: rgb(16, 18, 19);
+}
+#result{
+    color:rgb(255, 236, 127);
+}
+button:active{
+    background-color: rgb(209, 147, 119);
+    
+
+}
+input{
+    background:linear-gradient(purple, yelloq);
+    background-color: rgb(244, 245, 179);
+    border: none;
+    color: rgb(28, 48, 66);
+    border-radius: 10px;
+}

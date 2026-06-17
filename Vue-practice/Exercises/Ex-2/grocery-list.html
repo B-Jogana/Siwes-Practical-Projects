@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+
+    <style>
+        #app{
+            height:100vh;
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+           
+           
+        }
+
+        button{
+            font-size: 20px;
+            padding: 2px;
+            margin: 1rem;
+            border-radius: 5px;
+            background-color: lightblue;
+        }
+
+        img{
+            border-radius: 50%;
+        }
+
+        div{
+            
+            font-size: 20px;
+            cursor: pointer;
+            
+            text-align: center;
+        }
+
+        p{
+            display: flex;
+            justify-content: space-between;}
+
+        .dchange{
+            width: 200px;
+            padding: 10px;
+            
+            text-decoration: underline;
+            
+        }
+
+        body{
+           
+            align-items: center;
+            height: 100vh;
+            background: #a09f9f
+        }
+     
+      li{
+       
+        list-style-type: none;
+        padding: 10px 20px;
+        margin: 20px auto;
+        background:#fff;
+        border-radius: 10px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+      }
+
+      ul li .para{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .fav{
+        background: #ff9ed2;
+        color:white;
+      }
+
+    </style>
+</head>
+<body>
+    <div id="app">
+         <h2 v-show="showFood">Food Lists<br> </h2>
+         <h2 v-show="!showFood">Food Lists is Empty</h2>
+        <div v-show="showFood">
+           
+            <ul>
+                <li v-for="food in fList" :key="food.id">
+                   
+                    <p class="para"><span>{{ food.name }}</span> - <span>Price: ${{ food.price }} </span> - <span> Order: {{ food.order }}</span></p>
+                </li>
+            </ul>
+        </div>
+
+        <button @click="clearList">
+            <span v-show="showFood">Clear Food List</span>
+            <span v-show="!showFood">Show Food List</span>
+        </button>
+    </div>
+
+   
+
+    
+
+   
+
+
+    <script src="appG.js"></script>
+    
+</body>
+</html>

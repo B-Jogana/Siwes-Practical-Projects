@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="decription" content="html form"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="STYLE1.CSS/T1.css">
+
+
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+        #submit{
+            background-color: black;
+            color: antiquewhite;
+
+        }
+
+        #submithover{
+            background-color: blueviolet;
+            color: white;
+        }
+        .select{
+            background-color: brown;
+        }
+        .field{
+            background-color: aliceblue;
+            color: brown;
+        }
+
+        #male{
+            color: black;
+            background-color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="hd">
+        <nav>
+            <Ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Contact">Contact</a></li>
+
+            </Ul>
+        </nav>
+    </header><hr>
+
+    <form action="para.html" target="_blank" method="get">   
+        <label for="fname" name="fname"> FirstName</label>
+        <input type="text" id="fname" name="FirstName"> <br><br>
+
+        <label for="lname" name="lname"> LastName</label>
+        <input type="text" id="lname" name="LastName"><br>
+
+        
+        <input type="radio" id="html"  name="fav lan" value="html">
+         <label for="html" name="html">html</label><br>
+
+        <input type="radio" id="css"  name="fav lan" value="css">
+        <label for="css" name="css">css</label><br>
+
+        <input type="radio" id="javascript"  name="fav lan" value="javascript">
+        <label for="javascrip" name="javascript">javascript</label><hr>
+
+        <input id="submit" type="submit"  value="submit" ><br>
+
+        <label for="car types"> Chose a car</label>
+        <select class="select" >
+            <option>Toyota</option>
+            <option>lexus</option>
+            <option>golf</option>
+
+        </select>
+        <textarea row="4" col=" 4"> hjiffuejghhhjgjgjtrhghjj</textarea><hr>
+        <button  class="select" type="button" onclick="alert('hello Bashir')">click me</button>
+
+        <fieldset class="field">
+            <legend class="field">Data Input</legend>
+            <label for="fname" name="fname">FirstName</label>
+            <input type="text" placeholder="FirstName"><hr>
+
+            <input id="male" type="radio" id="male" name="gender" value="famale">
+            <label for="male" name="female">Male</label>
+
+            <input id="female" type="radio" id="female" name="gender" value="female">
+            <label for="female" name="female">Female</label><br>
+
+            <label for="lang">chose language</label>
+            <select>
+                <option>hausa</option>
+                <option>engkish</option>
+                <option>arabic</option>
+            </select>
+
+            <form>
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor">
+              </form><hr>
+
+              
+
+            <input type="reset">
+        </fieldset>
+
+        
+        
+      
+          </svg>
+
+          <img src="bashjp.jpg"/>
+        
+        
+    </form>
+
+    
+    
+</body>
+</html> 

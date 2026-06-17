@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue1</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+
+    <style>
+        #app{
+            height:100vh;
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+           
+           
+        }
+
+        button{
+            font-size: 20px;
+            padding: 2px;
+            margin: 1rem;
+            border-radius: 5px;
+            background-color: lightblue;
+        }
+
+        img{
+            border-radius: 50%;
+        }
+
+        div{
+            font-size: 20px;
+           
+            cursor: pointer;
+            
+            text-align: center;
+        }
+
+        .dchange{
+            width: 200px;
+            padding: 10px;
+            
+            text-decoration: underline;
+            
+        }
+
+        body{
+           
+            align-items: center;
+            height: 100vh;
+            background: #a09f9f
+        }
+     
+      li{
+        list-style-type: none;
+        padding: 10px 20px;
+        margin: 20px auto;
+        background:#fff;
+        border-radius: 10px;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+      }
+
+      .fav{
+        background: #ff9ed2;
+        color:white;
+      }
+
+    </style>
+</head>
+<body>
+
+    <div id="app">
+
+       
+
+        <h3  class="h3-show" v-show="showlogos">Click To Select Your Favorite Paths Logo</h3>
+        <h3 v-show="!showlogos">You Close Logo</h3>
+
+
+        <div v-if="showlogos">
+ 
+            <ul>
+                <li @click="toggleColor(logo)" v-for="logo in logos" :class="{fav: logo.isFav}">
+                    <img :src="logo.img" :alt="logo.title">
+  
+                    <h3>{{logo.title}}</h3>
+                    <p>{{logo.author}}</p>
+                </li>
+
+                
+            </ul>
+
+        </div>
+
+       <h2>
+        <span v-if="showFav && filteredLogos.length > 0">Favorite Logos</span>
+        
+        <span v-else-if="showFav && filteredLogos.length === 0">You did not select favorite logo</span>
+        
+        <span v-else></span>
+    </h2>
+        <ul v-if="showFav">
+            
+            <li v-for="logo in filteredLogos" :class="{fav: logo.isFav}">
+                <img :src="logo.img" :alt="logo.title">
+    
+                <h3>{{logo.title}}</h3>
+                <p>{{logo.author}}</p>
+            </li>
+           
+
+                
+        </ul> 
+
+        <div class="btn">
+            <button @click="toggleShowlogos">
+                <span v-if="showlogos">Hide Logos</span>           
+                <span v-else="!showlogos">Show Logos</span>
+
+            </button>
+            <button  @click="toggleFav">
+                <span v-if="showFav && filteredLogos.length > 0 "> Hide Favorite Logos</span>           
+                <span v-else >Show Favorite Logos</span>
+            </button>
+        </div>
+       
+      
+
+
+    </div>
+
+   
+
+
+    <script src="app1.js"></script>
+    
+</body>
+</html>

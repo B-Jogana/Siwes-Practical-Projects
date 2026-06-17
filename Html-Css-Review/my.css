@@ -1,0 +1,92 @@
+body{
+    background-color:rgb(138, 138, 74);
+    font-size: 18px;
+    margin: 30px;
+    text-align:center;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+
+}
+
+.header .nav {
+ display:flex;
+ flex-direction: row;
+ justify-content:space-between;
+ margin:20px 50px;
+ font-weight:bolder;
+ font-size: 23px;
+}
+.nav a {
+    text-decoration: none;
+    color:aliceblue
+}
+.h1-welcome{
+    text-align: center;
+    text-shadow: 0cqmax;
+    text-transform: uppercase;
+}
+
+.sections {
+    display: flex;
+    justify-content:center;
+    align-items:baseline;
+    gap: 2rem;
+    margin-bottom: 40px;
+}
+
+
+
+.section-1 {
+    border-radius: 10px;
+    width:100%;
+    text-align: center;
+    box-shadow: 1px 0 2px 1px #333
+    
+}
+
+.section-2 {
+    border-radius: 10px;
+    width:100%;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 25px;
+    box-shadow: 1px 0 2px 1px #333
+}
+ul  {
+    list-style: none;
+}
+
+
+
+.yes{
+    padding: 1rem ;
+    border-radius:13px ;
+    background-color: green ;
+    color: aliceblue;
+    outline: none;
+    border: none;
+}
+.yes:hover{
+    background-color: rgb(77, 168, 77);
+    color: black;
+    border: none;
+}
+.no{
+    padding: 1.05rem ;
+    border-radius:13px ;
+    background-color: rgb(240, 4, 4);
+    color: white;
+    border: none;    
+}
+.no:hover{
+    background-color: rgb(228, 84, 84);
+    color: black;
+    border: none;
+}
+
+footer {
+    margin: 30px;
+}
