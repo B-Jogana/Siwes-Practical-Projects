@@ -1,0 +1,30 @@
+
+#app, .modal {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #315e3a;
+  margin-top: 60px;
+}
+
+h1 {
+  border-bottom: 1px solid #dddd;
+  color: rgb(9, 9, 49)
+}
+
+.modal .links a {
+  align-items: center;
+  color: black;
+  font-weight: bolder;
+  margin: 15px;
+  border: 1px solid white;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+
+}
+
+.modal .links h1 {
+  color: #fff92d;
+}
